@@ -1,6 +1,7 @@
 ---
-title: "Tracking A14 Wifi problem at RPI4"
+title: "Tracking Android 14 Wifi problem at RPI4"
 date: 2025-01-24T19:17:33-03:00
+categories: ["android"]
 ---
 
 #### Android

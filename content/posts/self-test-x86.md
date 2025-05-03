@@ -1,6 +1,7 @@
 ---
 title: "Using QEMU to run Kernel Selftests (x86)"
 date: 2024-03-05T17:53:15-03:00
+categories: ["linux kernel"]
 ---
 
 <img style="display: block; margin: auto;" src="/blog/qemu_logo.webp"/>

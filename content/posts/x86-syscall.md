@@ -1,6 +1,7 @@
 ---
 title: "Adding an arm64 syscall entry"
 date: 2023-07-27T17:53:17-03:00
+categories: ["linux kernel"]
 ---
 
 <img style="display: block; margin: auto;" src="/blog/tux.webp"/>
