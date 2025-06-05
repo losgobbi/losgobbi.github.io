@@ -6,7 +6,17 @@ theme = "devise"
 enableEmoji = true
 googleAnalytics = ""
 enableRobotsTXT = true
-copyright = "&copy; personal blog :)"
+copyright = "personal blog :)"
+
+[outputs]
+home = ["HTML", "RSS"]
+
+[outputFormats]
+[outputFormats.RSS]
+mediaType = "application/rss+xml"
+baseName = "index"
+isPlainText = true
+notAlternative = true
 
 # Main menu items
 [menu]
@@ -29,7 +39,7 @@ copyright = "&copy; personal blog :)"
 # Configuration Features
 [params]
   baseURL = "https://losgobbi.github.io/blog"
-  description = "AOSP & Kernel & Android"      # Your meta description of the site
+  description = "AOSP / Kernel / Android"      # Your meta description of the site
   header_title = "Rodrigo Gobbi"                 # Your header title
   header_subtitle = "Some software experiments ;)" # Your header subtitle
   home_image = "losgobbi.jpeg"          # Path to header image starting from the static directory (optional)
@@ -46,6 +56,9 @@ copyright = "&copy; personal blog :)"
   [[params.social]]
     fa_icon = "fab fa-linkedin-in fa-1x"
     href = "http://www.linkedin.com/in/rodrigo-gobbi"
+ [[params.social]]
+    fa_icon = "fas fa-rss fa-1x"
+    href = "/blog/posts/index.xml"
 
 # use html inside mk
 [markup]

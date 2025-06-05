@@ -12,9 +12,9 @@ Instead using the VirtualBox, I remember about QEMU, a versatile emulator and vi
 
 #### Environment:
 
-The selftests are located at the Kernel source tree, at *tools/testing/selftests/* folder. You need to clone that and ideally, be running the same kernel version in your system. I’ve used a release candidate version (<linux>/Makefile):
+The selftests are located at the Kernel source tree, at *tools/testing/selftests/* folder. You need to clone that and ideally, be running the same kernel version in your system. I’ve used a release candidate version (kernel_source/Makefile):
 
-<img style="display: block; margin: auto;" src="/blog/kernel_version.webp"/><br>
+<img style="display: block; margin: auto;" src="/blog/kernel_version.webp"/><br/>
 
 After building the Kernel, we could use the bzImage (Kernel compressed image binary) through QEMU CLI but we don’t have a file system available to interact with the system (actually, Kernel won’t boot without it…). So, I’ve used the [Buildroot](https://buildroot.org/) platform to create a FS with utilities and dependencies plus the Kernel image. In that way, we could interact with the system and achieve our goal, run the Kernel Selftests. I’ve used some pieces of a nice instructions file at [here](https://gist.github.com/chrisdone/02e165a0004be33734ac2334f215380e) (very straightforward if you are not used to Buildroot).
 

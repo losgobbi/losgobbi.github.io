@@ -26,7 +26,7 @@ Either knowing all of that theory, I’ve been spending a lot of time doing NONE
 
 This year I’ve noticed the following according to a picture from my Bitbucket repository (which I was using to keep track of this side project):
 
-<img style="display: block; margin: auto;" src="/blog/commit.webp"/><br>
+<img style="display: block; margin: auto;" src="/blog/commit.webp"/><br/>
 
 Yeah, that’s right!!! I’ve been doing this, at least, since 2020, but in reality this started in 2019. I spent around four years of my free time on this mission to create this side project. The bad thing about all of this is that I could not follow the recommendations previously mentioned to keep things simple so the idea could be validated. From the code perspective, I have tried to develop a lot of features from day one, because firstly, it was fun. Secondly, there were a lot of features that would be necessary for the app to make sense in my mind so they couldn’t stay for later development.
 
