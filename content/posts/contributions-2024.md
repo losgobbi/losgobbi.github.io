@@ -6,7 +6,8 @@ categories: ["linux kernel"]
 
 #### My contributions at 2024
 
-TL;DR; patches over staging area
+TL;DR; patches over staging area  
+Number of patches: 5
 
 [staging: gdm724x: fix returning -1 with return equivalent errors](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=00ea2b0dc6ff47e3d3d976fd788aa22373d042b8)<br/>
 [staging: rtl8723bs: remove unused debug statements](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=ea5e911e14cebfc9832728c27f05e43b086fec0c)<br/>
