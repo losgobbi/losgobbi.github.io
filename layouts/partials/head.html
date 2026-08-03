@@ -1,0 +1,36 @@
+<head>
+    {{- $siteTitle := .Site.Title -}}
+    {{- $pageTitle := cond .IsHome $siteTitle (printf "%s · %s" .Title $siteTitle) -}}
+    {{- $desc := cond (or .IsHome (not .Description)) .Site.Params.description .Description -}}
+    <title>{{ $pageTitle }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ $desc }}" />
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    {{/* Open Graph — melhora prévia de links e descoberta */}}
+    <meta property="og:title" content="{{ $pageTitle }}" />
+    <meta property="og:description" content="{{ $desc }}" />
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:site_name" content="{{ $siteTitle }}" />
+    <meta name="twitter:card" content="summary" />
+
+    {{ with .OutputFormats.Get "rss" }}
+    {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+    {{ end }}
+
+    {{/* Adds complete override capability */}}
+    {{ $overrideTemplate := resources.Get "sass/override.scss" }}
+    {{ $override := $overrideTemplate | resources.ExecuteAsTemplate "css/theme.scss" . | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $override.RelPermalink }}">
+
+    {{/* Adds custom styles capability */}}
+    {{ $customTemplate := resources.Get "sass/custom.scss" }}
+    {{ if $customTemplate }}
+    {{ $custom := $customTemplate | resources.ExecuteAsTemplate "css/custom.scss" . | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $custom.RelPermalink }}">
+    {{ end }}
+
+    {{ template "_internal/google_analytics.html" . }}
+</head>

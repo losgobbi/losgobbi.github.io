@@ -4,7 +4,7 @@ date: 2024-03-05T17:53:15-03:00
 categories: ["linux kernel"]
 ---
 
-<img style="display: block; margin: auto;" src="/blog/qemu_logo.webp"/>
+<img style="display: block; margin: auto;" src="/qemu_logo.webp"/>
 
 Last month I read something about Kernel Selftests, a subject I had never heard of. Those tests were created to exercise some code paths inside the Kernel and they can also be used to detect regression during future versions. I was curious about it and initially I was intending to run that at my personal machine but tests could generate instabilities or side effects during the system usage, so I’ve changed my mind and I was looking for a VM for that purpose.
 
@@ -14,7 +14,7 @@ Instead using the VirtualBox, I remember about QEMU, a versatile emulator and vi
 
 The selftests are located at the Kernel source tree, at *tools/testing/selftests/* folder. You need to clone that and ideally, be running the same kernel version in your system. I’ve used a release candidate version (kernel_source/Makefile):
 
-<img style="display: block; margin: auto;" src="/blog/kernel_version.webp"/><br/>
+<img style="display: block; margin: auto;" src="/kernel_version.webp"/><br/>
 
 After building the Kernel, we could use the bzImage (Kernel compressed image binary) through QEMU CLI but we don’t have a file system available to interact with the system (actually, Kernel won’t boot without it…). So, I’ve used the [Buildroot](https://buildroot.org/) platform to create a FS with utilities and dependencies plus the Kernel image. In that way, we could interact with the system and achieve our goal, run the Kernel Selftests. I’ve used some pieces of a nice instructions file at [here](https://gist.github.com/chrisdone/02e165a0004be33734ac2334f215380e) (very straightforward if you are not used to Buildroot).
 
@@ -52,11 +52,11 @@ qemu-system-x86_64 -kernel /opt/buildroot_topdir/build_cfg_files/buildroot/image
 
 The system will looks like this:
 
-<img style="display: block; margin: auto;" src="/blog/qemu.webp"/>
+<img style="display: block; margin: auto;" src="/qemu.webp"/>
 
 Running tests:
 
-<img style="display: block; margin: auto;" src="/blog/qemu_fs.webp"/>
+<img style="display: block; margin: auto;" src="/qemu_fs.webp"/>
 
 I’ve played around using the full suite of tests, generating the following results:
 

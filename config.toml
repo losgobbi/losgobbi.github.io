@@ -1,4 +1,4 @@
-baseURL = "https://losgobbi.github.io/blog"
+baseURL = "https://losgobbi.github.io/"
 title = "losgobbi"
 languageCode = "en-us"
 theme = "devise"
@@ -38,7 +38,7 @@ notAlternative = true
 
 # Configuration Features
 [params]
-  baseURL = "https://losgobbi.github.io/blog"
+  baseURL = "https://losgobbi.github.io/"
   description = "AOSP / Kernel / Android"      # Your meta description of the site
   header_title = "Rodrigo Gobbi"                 # Your header title
   header_subtitle = "Some software experiments ;)" # Your header subtitle
@@ -58,7 +58,7 @@ notAlternative = true
     href = "http://www.linkedin.com/in/rodrigo-gobbi"
  [[params.social]]
     fa_icon = "fas fa-rss fa-1x"
-    href = "/blog/posts/index.xml"
+    href = "/posts/index.xml"
 
 # use html inside mk
 [markup]

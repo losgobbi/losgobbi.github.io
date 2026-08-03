@@ -1,0 +1,12 @@
+# Hugo build output & cache
+/public/
+/resources/
+.hugo_build.lock
+
+# Theme exampleSite build artifacts
+themes/*/exampleSite/public/
+themes/*/exampleSite/resources/
+
+# FrankMD editor (local tooling) & scratch images
+.fed
+/images/
