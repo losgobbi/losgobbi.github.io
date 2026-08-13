@@ -2,6 +2,7 @@
 title: "Adding an arm64 syscall entry"
 date: 2023-07-27T17:53:17-03:00
 categories: ["linux kernel"]
+description: "Manually wiring up a new arm64 syscall table entry on a Raspberry Pi Linux kernel fork."
 ---
 
 <img style="display: block; margin: auto;" src="/tux.webp"/>

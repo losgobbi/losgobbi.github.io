@@ -1,3 +1,8 @@
+---
+title: "About"
+description: "Rodrigo Gobbi — software engineer."
+---
+
 ### That's me!!! 
 
 "Software engineer with a strong systems background, interested in understanding software from the kernel and operating system level up to distributed systems and cloud infrastructure.", by ChatGPT.

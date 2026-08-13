@@ -2,6 +2,7 @@
 title: "Using QEMU to run Kernel Selftests (x86)"
 date: 2024-03-05T17:53:15-03:00
 categories: ["linux kernel"]
+description: "Running the Linux Kernel selftests suite inside a QEMU x86 VM built with Buildroot, instead of on bare metal."
 ---
 
 <img style="display: block; margin: auto;" src="/qemu_logo.webp"/>

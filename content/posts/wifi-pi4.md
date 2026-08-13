@@ -2,6 +2,7 @@
 title: "Tracking Android 14 Wifi problem at RPI4"
 date: 2025-01-24T19:17:33-03:00
 categories: ["android"]
+description: "Debugging a Wifi and Bluetooth connection failure on Android 14 running on a Raspberry Pi 4."
 ---
 
 #### Android

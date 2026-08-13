@@ -2,13 +2,14 @@
 title: "My contributions at 2025"
 date: 2026-02-08T17:52:00-03:00
 categories: ["linux kernel"]
+description: "A list of my 2025 patches accepted into the upstream Linux kernel."
 ---
 
 #### My contributions at 2025
 
 Number of patches: 14
 
-[dt-bindings: trivial-devices: Add Maxim max30208](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=54cec13d5726a88919b5bf3f47491b6c3fe67598)<br/>
+[dt-bindings: trivial-devices: Add Maxim max30208](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=54cec13d5726a88919b5bf3f47491b6c3fe67598)
 [dt-bindings: trivial-devices: Add VZ89TE to trivial](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=294d4a1c79c1e83adf283cb164488cf7d9e2a257)<br/>
 [wifi: ath11k: validate ath11k_crypto_mode on top of ath11k_core_qmi_firmware_](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=b0d226a60856a1b765bb9a3848c7b2322fd08c47)<br/>
 [dt-bindings: iio: adc: st,spear600-adc: txt to yaml format conversion.](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=dc0756de69dc398faa4472eafb72563672cc5981)<br/>

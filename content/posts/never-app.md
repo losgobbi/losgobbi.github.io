@@ -2,6 +2,7 @@
 title: "The neverending app"
 date: 2022-09-22T17:38:33-03:00
 categories: ["misc"]
+description: "A personal history of trying, and repeatedly failing, to ship a mobile app startup."
 ---
 
 <img style="display: block; margin: auto;" src="/app.webp"/>

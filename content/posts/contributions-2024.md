@@ -2,11 +2,11 @@
 title: "My contributions at 2024"
 date: 2025-05-26T21:00:00-03:00
 categories: ["linux kernel"]
+description: "A list of my 2024 patches accepted into the upstream Linux kernel."
 ---
 
 #### My contributions at 2024
 
-TL;DR; patches over staging area  
 Number of patches: 5
 
 [staging: gdm724x: fix returning -1 with return equivalent errors](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=00ea2b0dc6ff47e3d3d976fd788aa22373d042b8)<br/>
