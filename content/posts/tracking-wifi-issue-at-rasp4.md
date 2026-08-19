@@ -5,7 +5,7 @@ categories: ["android"]
 description: "Debugging a Wifi and Bluetooth connection failure on Android 14 running on a Raspberry Pi 4."
 ---
 
-#### Android
+#### Wifi state at Android 14
 I was doing some experiments with my Raspberry Pi 4 + “the portable display 7 IPS raspberry pi” over the last months like building, installing and testing Android OS (Android 14) from the following repository: [android-rpi](https://github.com/android-rpi/) . Besides that repository, there is also the  [raspberry-vanilla](https://github.com/raspberry-vanilla), and in both cases, they “support” Android for rpi (not just the for pi4). The first one, is not considered a vanilla repository (as we can see in the name), meaning, that is not a pure AOSP fork, it may have some or a set of changes customized to rpi hardware.
 
 On the other hand, at vanilla repo, it’s considered a pure fork, with just opensource stuff, like using at graphics stack the [Mesa3d](https://www.mesa3d.org/) project as a implementation of OpenGL.
@@ -26,7 +26,7 @@ Well, at my tests I noticed two issues from “unrelated areas”, Wifi and BT, 
 
 There were other strange errors and not necessary the two logs that I’ve quoted are the culprit of Wifi/BT to not be working. Later, I’ve identified a very similar report at this [issue](https://github.com/android-rpi/device_arpi_rpi4/issues/128), for BT case, in which I was trying to help. The android-rpi is less active than vanilla one, at least for now, so in that time I was wondering, in order to pursuit those problems and compare the behavior: *“Maybe I can test this using the vanilla repo?”*. And that, is what I did!!!
 
-#### Tracking
+#### Tracking Wifi behavior
 
 ….after spending some time to change my workspace from android-rpi to vanilla one, I was capable of repeating the same tests and compare the logs, in order to see if both “state machines” were equivalent, since they were in a kind of similar Android version, but not exactly using the same infrastructure of wpa, wpa configuration and so on.
 
@@ -42,7 +42,7 @@ The idea was to identify if the problem was:
 
 In this particular mixed case, blobs for Linux Kernel and firmware were copied from vanilla repo.
 
-#### Results:
+#### Test Results of Wifi
 
 After some building issues, I’ve faced a loop of different problems over pi4. Some of them were created by me during the lack of attention when mixing these repositories. One of them was a crash at SurfaceFlinger, one process responsible for managing things related to the graphics stack:
 
@@ -75,6 +75,8 @@ crw-rw-rw- 1 root graphics 226, 128 1970-01-01 00:00 /dev/dri/renderD128
 ```
 
 This was only one of the issues, after fixing that a lot of other instabilities were detected during the “mixing test”. In the end of all of this, I couldn’t stabilize that test and reach the root cause of why both problems were occurring at android-rpi repo. 
+
+#### Conclusion
 
 Anyway, mixing different devices folders from “different” versions can be tricky and create a lot of instabilities. Considering that the history of changes, in this case, for android-rpi, is not “public known”, it’s hard to point if from the first A14 support Wifi/BT was working or not.
 Android for RPI4 doesn’t officially supports LK bootloader/fastboot mode since it uses the sdcard, making every test very expensive.

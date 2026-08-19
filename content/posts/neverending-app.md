@@ -7,7 +7,7 @@ description: "A personal history of trying, and repeatedly failing, to ship a mo
 
 <img style="display: block; margin: auto;" src="/app.webp"/>
 
-#### The starting point:
+#### The starting point
 The beginning of this story started in the year of 2014 when, with a couple of friends, I’ve decided to buy a Macbook Air in order to build mobile apps. Back on that day, we started a couple of things using native iOS but we moved from it to hybrid technologies, in particular, the Ionic Framework (old Apache Cordova but version one which was using AngularJS).
 
 We did a couple of nice things and we have learned a LOT (from cloud services, payment gateway integration and more). It was very nice and we had some funny moments.
@@ -18,7 +18,7 @@ Since I’ve already worked using Ionic in the past, I’ve decided to keep on t
 
 This new project used a new version of Ionic in order to take advantage of new features, resources and new styles from both operating systems (Android and iOS). Additionally, this version would be using Typescript rather than Javascript, so a learning curve would be necessary in order to write that app. In the past, I’ve used AWS services and they are too complicated in the end (too many services, different terms, etc). In this project I decided to move to Google Services aiming simplicity (Firebase cloud).
 
-#### Fast-forwarding through time:
+#### Fast-forwarding through time
 Let’s move in time so we can focus on the history behind this. I’ve been following some trends for some time now about how to build ideas out of the paper, MVP, focus on major things and so on. I enjoy reading blogs, news, and watching reality shows about people who start their own tech businesses; listening to their pitches; how they work; difficulties; and all of the major challenges that come with this type of project.
 
 The rule of the thumb is to be fast enough in the development cycle focusing on simple things in order to validate the whole idea during earlier stages. Getting feedback from the market is crucial in order to check if the idea makes sense and if you are really solving a pain point.
@@ -36,12 +36,12 @@ It was a long run, with a lot of doubts over myself and interesting questions ov
 - “Is it all worth it?”
 - “Did I spent four years on this for nothing?”
 
-#### Project on hold:
+#### Project on hold
 Last month I finally finished what I set out to do in “roadmap” terms. I have a working app version for both operating systems. The integration with Firebase is functional too and in particular, for Android, I was able to use the in-app purchases for subscription cases and they are working too over the Google sandbox environment (test environment).
 
 At this moment I’ve decided to put this project “on hold”, and for now, it will not be published to the market because, among other things, Brazil is too bureaucratic for certain things and the marketing area for mobile apps is heavy and expensive.
 
-#### Final thoughts:
+#### Final thoughts
 It’s hard to develop a full side project of this size without a proper team. If you put it down it was really big: the app aimed at both OS’s versions, Android and iOS. There was a cloud infrastructure behind the app for authorization, registration and storing information. Also, there was an integration with IAP (in-app purchases) for both stores. I’ve tried to use inside the app the AdSense version for mobile too.
 
 With a team on your side you can divide and conquer all of those areas, and maybe, focus on the part you like the most since there are a lot of options. With a team, the rule of thumb could be accomplished in an easier way and in short time.

@@ -1,8 +1,33 @@
 {{ define "main" }}
     <div class="pl-sm-4 ml-sm-5">
-        <small class="text-muted d-block mb-3">Published {{ .Date.Format "January 2, 2006" }}</small>
+        <h1 class="h3 mb-2">{{ .Title }}</h1>
+        <small class="text-muted d-block mb-3">Published {{ .Date.Format "January 2, 2006" }} &middot; {{ .ReadingTime }} min read &middot; {{ .WordCount }} words</small>
+        {{ if .TableOfContents }}
+        <div class="toc mb-4">
+            <strong>Table of Contents</strong>
+            {{ .TableOfContents }}
+        </div>
+        {{ end }}
         {{ .Content }}
     </div>
+
+    <script>
+    document.querySelectorAll('.highlight').forEach(function (block) {
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'copy-btn';
+        btn.setAttribute('aria-label', 'Copy to clipboard');
+        btn.innerHTML = '<i class="fas fa-copy"></i>';
+        btn.addEventListener('click', function () {
+            var code = block.querySelector('code');
+            navigator.clipboard.writeText(code.innerText).then(function () {
+                btn.innerHTML = '<i class="fas fa-check"></i>';
+                setTimeout(function () { btn.innerHTML = '<i class="fas fa-copy"></i>'; }, 1500);
+            });
+        });
+        block.appendChild(btn);
+    });
+    </script>
 
     {{ template "_internal/disqus.html" . }}
 {{ end }}

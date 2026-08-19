@@ -7,7 +7,11 @@ description: "Manually wiring up a new arm64 syscall table entry on a Raspberry 
 
 <img style="display: block; margin: auto;" src="/tux.webp"/>
 
+#### Linux Kernel syscalls
+
 For some architectures, kernel has changed the generation of some inner headers for syscall tables. Now at kernel 6.1.y (Pi fork) there are some utility scripts like *syscallnr.sh* which acts over a table file called *syscall.tbl*. Apparently, for arm64, this is not the case since we still have to add the entries manually like the old days.
+
+#### What we need to change
 
 At linux-rpi-6.1.y folder, change the following headers:
 

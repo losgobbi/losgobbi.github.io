@@ -65,3 +65,9 @@ notAlternative = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+    style = "monokailight"
+  [markup.tableOfContents]
+    startLevel = 4
+    endLevel = 6
+    ordered = false

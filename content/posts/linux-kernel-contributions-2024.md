@@ -5,10 +5,9 @@ categories: ["linux kernel"]
 description: "A list of my 2024 patches accepted into the upstream Linux kernel."
 ---
 
-#### My contributions at 2024
+At 2024, got the following number of patches: 5 at staging tree
 
-Number of patches: 5
-
+#### staging patches
 [staging: gdm724x: fix returning -1 with return equivalent errors](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=00ea2b0dc6ff47e3d3d976fd788aa22373d042b8)<br/>
 [staging: rtl8723bs: remove unused debug statements](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=ea5e911e14cebfc9832728c27f05e43b086fec0c)<br/>
 [staging: rtl8723bs: change remaining printk to proper api](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=e139445ccbe4d902fce1dce517cd3b63f5b68eb8)<br/>
