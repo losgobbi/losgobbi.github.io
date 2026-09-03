@@ -43,7 +43,7 @@ notAlternative = true
   header_title = "Rodrigo Gobbi"                 # Your header title
   header_subtitle = "Some software experiments ;)" # Your header subtitle
   home_image = "losgobbi.jpeg"          # Path to header image starting from the static directory (optional)
-  recent_posts = 0                           # Max amount of recent posts to show
+  recent_posts = 3                           # Max amount of recent posts to show
   mainSections = ["posts", "blog"]   # Main sections to include in recent posts
   [params.style]                             # CSS style overrides
     backgroundColor = "#f8f9fa"
